@@ -15,6 +15,7 @@ app.get('/qcm', testController);
 
 app.get('/list', listQcmsFunc);
 
+app.get('/list2', listQcmsConst);
 
 app.listen(
     port,

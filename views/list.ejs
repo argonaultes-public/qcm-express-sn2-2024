@@ -1,10 +1,15 @@
 <%- include('header') -%>
 
-    <ul>
-      <li>BDD</li>
-      <li>Javascript</li>
-      <li>Python</li>
-      <li>Anglais</li>
-    </ul>
+    <% if (locals.qcms) { %>
+      <ul>
+        <% for (qcm of qcms) { %>
+        <li><%= qcm %></li>
+        <% } %>
+      </ul>
+    <% } %>
+
+    <% if (locals.qcm) { %> 
+      <p><%= qcm %></p>
+    <% } %>
 
 <%- include('footer') -%>
