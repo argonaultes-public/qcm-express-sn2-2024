@@ -20,6 +20,10 @@ app.get('/list2', listQcmsConst);
 // Etape 1 : ajouter une nouvelle route prenant en paramètre l'id du QCM
 app.get('/qcm/:qcmid', qcmDetails);
 
+// NOUVEAU QCM Etape 1 : créer une route GET pour afficher le formulair d'ajout
+
+// NOUVEAU QCM Etape 2 : créer une route POST pour traiter le formulaire
+
 app.listen(
     port,
     () => {
