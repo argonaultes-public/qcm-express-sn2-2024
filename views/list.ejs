@@ -3,13 +3,13 @@
     <% if (locals.qcms) { %>
       <ul>
         <% for (qcm of qcms) { %>
-        <li><%= qcm %></li>
+        <li><%= qcm.name %> (<%= qcm.subject %>)</li>
         <% } %>
       </ul>
     <% } %>
 
     <% if (locals.qcm) { %> 
-      <p><%= qcm %></p>
+      <p><%= qcm.name %> (<%= qcm.subject %>)</p>
     <% } %>
 
 <%- include('footer') -%>
