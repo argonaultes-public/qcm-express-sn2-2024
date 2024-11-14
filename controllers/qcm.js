@@ -1,4 +1,4 @@
-const qcms = require('../models/database');
+const {qcms, addQcm} = require('../models/database');
 
 const testController = (request, response) => {
     response.render('test.ejs');
@@ -27,4 +27,14 @@ const qcmDetails = (request, response) => {
 
 // NOUVEAU QCM Etape 5 : créer une vue pour l'affichage du formulaire
 
-module.exports = {testController, qcmDetails};
+const displayNewQcm = (request, response) => {
+    response.render('newqcm.ejs');
+};
+
+const createQcm = (request, response) => {
+    addQcm(request.body);
+    response.redirect('/list2');
+}
+
+
+module.exports = {testController, qcmDetails, displayNewQcm, createQcm};

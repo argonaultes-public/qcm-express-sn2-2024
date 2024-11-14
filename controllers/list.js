@@ -1,4 +1,4 @@
-const qcms = require('../models/database');
+const {qcms, addQcm} = require('../models/database');
 
 function listQcmsFunc(request, response) {
 

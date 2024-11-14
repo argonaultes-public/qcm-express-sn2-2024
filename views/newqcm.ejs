@@ -1,0 +1,24 @@
+<%- include('header.ejs') %>
+
+<div class="details">
+    <form method="POST" action="/qcm/new">
+        <div>
+            <label for="name">Nom</label>
+            <input id="name" type="text" name="name">    
+        </div>
+        <div>
+            <label for="subject">Sujet</label>
+            <input id="subject" type="text" name="subject">    
+        </div>
+        <div>
+            <label for="theme">Theme</label>
+            <input id="theme" type="text" name="theme">    
+        </div>
+        <div>
+            <input type="submit" value="Create">
+        </div>
+    </form>
+    
+</div>
+
+<%- include('footer.ejs') %>
