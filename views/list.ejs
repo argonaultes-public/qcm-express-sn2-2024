@@ -3,7 +3,7 @@
     <% if (locals.qcms) { %>
       <ul>
         <% for (qcm of qcms) { %>
-        <li><%= qcm.name %> (<%= qcm.subject %>)</li>
+        <li><a href="/qcm/<%= qcm.id %>"><%= qcm.name %> (<%= qcm.subject %>)</a></li>
         <% } %>
       </ul>
     <% } %>
