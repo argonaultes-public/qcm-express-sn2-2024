@@ -1,5 +1,5 @@
 const welcomeController = (request, response) => {
-    response.send('Hello EPSI');
+    response.render('welcome.ejs', {title: 'Hello EPSI'});
 };
 
 module.exports = welcomeController;

@@ -1,0 +1,14 @@
+.menu > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu > ul > li {
+  display: inline;
+}
+.menu > ul > li > a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
